@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
     setup(){
         const brand = 'Mercedes';
@@ -35,13 +36,13 @@ export default {
             title: 'Hola',
             name: 'Leo'
         };
-        const powerCurrent = 1;
+        let powerCurrent = ref(40);
 
         const upPower = () => {
-            this.powerCurrent++;
+            powerCurrent.value++;
         };
         const downPower = () => {
-            this.powerCurrent--;
+            powerCurrent.value--;
         };
 
         return {

@@ -6,8 +6,8 @@
 <p>price: {{ price }}</p>
 <p>message: {{ message }}</p>
 <p>Power: {{ power }}</p>
-<button @click="upPower">Aumentar</button>
-<button @click="downPower">Disminuir</button>
+<button @click="upPower">+ Aumentar</button>
+<button @click="downPower">- Disminuir</button>
 </template>
 
 <script>
